@@ -1,0 +1,40 @@
+# Multi-AI Consultation System Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core AI and ML libraries
+ollama>=0.1.0
+sentence-transformers>=2.2.2
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# PDF Processing (choose based on your needs)
+PyPDF2>=3.0.0          # Basic PDF text extraction
+PyMuPDF>=1.23.0        # Advanced PDF processing (recommended)
+
+# OCR Support (optional, for scanned documents)  
+Pillow>=10.0.0         # Image processing
+pytesseract>=0.3.10    # OCR engine interface
+
+# Additional utilities
+pathlib              # Path handling (Python 3.4+)
+json                 # JSON handling (built-in)
+datetime             # Date/time handling (built-in)
+typing               # Type hints (built-in)
+re                   # Regular expressions (built-in)
+os                   # Operating system interface (built-in)
+sys                  # System-specific parameters (built-in)
+subprocess           # Process management (built-in)
+platform             # Platform identification (built-in)
+time                 # Time-related functions (built-in)
+random               # Random number generation (built-in)
+
+# Development and testing
+pytest>=7.4.0         # For testing (optional)
+black>=23.7.0          # Code formatting (optional)
+flake8>=6.0.0         # Linting (optional)
+
+# Note: Some packages are built-in to Python and don't need installation
+# Install Tesseract OCR separately for full OCR support:
+# - Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+# - Ubuntu: sudo apt install tesseract-ocr  
+# - macOS: brew install tesseract
